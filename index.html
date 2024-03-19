@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!-- Cargat React -->
+    <!-- lIBRERIA REACT -->
+    <script crossorigin src="https://unpkg.com/react@16/umd/react.production.min.js"></script> 
+    <!-- LIBRERIA REACT DOOM -->
+    <script crossorigin src="https://unpkg.com/react-dom@16/umd/react-dom.production.min.js"></script>
+    <!-- BABEL -->
+    <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+    
+    <title>ReactApp</title>
+
+</head>
+<body>
+
+    <div id="root"></div> <!-- Espacio destinado para renderizar el codigo -->
+    
+    <script type="text/babel"> //type="text/babel" importa babel para que haga la traduccion de un codigo moderno a un codigo que soporte cualquier navegador
+
+        const divRoot = document.querySelector('#root'); //Referencia al elemento en donde se renderiza: <div id="root"></div>
+
+        const nombre = 'Fersi';
+        const h1Tag = <h1>Hola, soy {nombre} </h1>; //Aqui se mezcla xml con js
+
+        ReactDOM.render (h1Tag, divRoot); //Indicacion para renderizar el tag dentro de el div root
+    </script>
+
+
+</body>
+</html>
